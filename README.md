@@ -11,12 +11,67 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 - [Inspiration](#inspiration)
 - [Contact](#contact)
 
-## Setup
+## Setting up the project
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+  Start by cloning the project with the command:
+  ```
+  $ git clone https://github.com/rmiyazaki6499/tour-of-heros.git
+  ```
+  
+  ## Setting up the project with Docker
 
+  For those that are not interested in setting up the project manually or would simply not have to worry about downloading node.js and its dependencies, I have      created a Dockerfile and docker-compose.yml file to help create a container with everything you would need to run the **mern-app**.
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+  ### Install Docker
+
+  To make this as easy as possible, we will be using *Docker Compose* to creat our container.
+
+  - If you do not have Docker yet, start by downloading it if you are on a Mac or Windows:
+  https://www.docker.com/products/docker-desktop
+
+  - Or if you are on a Linux Distribution follow the directions here:
+  https://docs.docker.com/compose/install/
+
+  - To confirm you have Docker Compose, open up your terminal and run the command below:
+
+  ```
+  $ docker-compose --version
+  docker-compose version 1.26.2, build eefe0d31
+  ```
+  
+  - Go into the project directory to build and run the container with:
+
+  ```
+  $ cd tour-of-heros/
+  $ docker-compose up -d --build
+  ```
+
+  **This may take a few moments**
+  
+  Navigate to http://localhost:4200 to view the site on the local server.
+It should look something like this:
+
+![tour-of-heros](https://user-images.githubusercontent.com/41876764/90862505-5d3f5600-e342-11ea-850b-365b4dbb1c45.png)
+  
+  ### Cleaning up the Container and Image
+
+  - To stop the container from running, use `<Ctrl-C>` twice.
+  - To close down the container use the command:
+
+  ```
+  $ docker-compose down
+  ```
+  - Then to clean up the container and image which we are no longer using use the command:
+
+  ```
+  $ docker system prune -fa
+  ```
+
+  - Confirm that the container and image is no longer there with:
+
+  ```
+  $ docker system df -v
+  ```
 
 ## Inspiration
 
