@@ -7,7 +7,9 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 ## Table of contents
 
-- [Setup](#setup)
+- [Setting up the project](#setting-up-the-project)
+- [Setting up the project with Docker](#setting-up-the-project-with-docker)
+- [Cleaning up the Container and Image](#cleaning-up-the-container-and-image)
 - [Inspiration](#inspiration)
 - [Contact](#contact)
 
