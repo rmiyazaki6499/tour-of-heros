@@ -1,0 +1,9 @@
+version: '3'
+
+services:
+  tour-of-heros:
+    build: '.'
+    tty: true
+    stdin_open: true
+    ports:
+      - '4200:4200'
