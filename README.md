@@ -28,7 +28,7 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
   To make this as easy as possible, we will be using *Docker Compose* to creat our container.
 
-  - If you do not have Docker yet, start by downloading it if you are on a Mac or Windows:
+  - If you do not have Docker yet, start by downloading it here if you are on a Mac or Windows:
   https://www.docker.com/products/docker-desktop
 
   - Or if you are on a Linux Distribution follow the directions here:
